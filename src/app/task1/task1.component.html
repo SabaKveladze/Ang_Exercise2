@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Source code version</h1>
+    <button (click)="majorFunction()">New Major Version</button>
+    <button (click)="minorFunction()">New Minor Version</button>
+    <app-child
+      [majorVersion]="majorVersion"
+      [minorVersion]="minorVersion"
+      [log]="parentLog">
+      
+    </app-child>
+</div>
