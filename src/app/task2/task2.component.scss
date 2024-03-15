@@ -1,0 +1,14 @@
+.flex {
+    display: flex;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.border {
+    padding: 20px;
+    border: 5px solid black;
+}

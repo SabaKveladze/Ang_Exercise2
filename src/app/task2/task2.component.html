@@ -1,0 +1,30 @@
+   
+   <div class="border">
+    <h1>Should Mankind colonize the universe?</h1>
+    <div class="flex">
+        <p>Agree: {{agreeCount}} ,</p>
+        <p>Disagree: {{disagreeCount}} </p>
+    </div>
+    <div class="column">
+         <app-child-comp 
+         [h3]="'DR.IQ'"
+        
+         (disagreeCountChange)="updateDisagreeCount($event)"
+         (agreeCountChange)="updateAgreeCount($event)"
+         ></app-child-comp>
+        <app-child-comp 
+        [h3]="'Celeritas'"
+       
+        (disagreeCountChange)="updateDisagreeCount($event)"
+        (agreeCountChange)="updateAgreeCount($event)"
+        ></app-child-comp>
+        <app-child-comp 
+        [h3]="'Bombasto'"
+        
+        (agreeCountChange)="updateAgreeCount($event)"
+        (disagreeCountChange)="updateDisagreeCount($event)"
+        ></app-child-comp>
+    </div>
+   
+   </div>
+   
